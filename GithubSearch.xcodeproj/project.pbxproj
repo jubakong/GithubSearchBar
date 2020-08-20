@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,17 @@
 		8940108C24EE3940005C94BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8940108A24EE3940005C94BA /* Main.storyboard */; };
 		8940108E24EE3942005C94BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8940108D24EE3942005C94BA /* Assets.xcassets */; };
 		8940109124EE3942005C94BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8940108F24EE3942005C94BA /* LaunchScreen.storyboard */; };
+		8940109A24EE39A3005C94BA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940109924EE39A3005C94BA /* ViewModel.swift */; };
+		8940109C24EE3AFC005C94BA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940109B24EE3AFC005C94BA /* Repository.swift */; };
+		8940109F24EE421C005C94BA /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940109E24EE421C005C94BA /* APIManager.swift */; };
+		8965FD8B24EE660F003559EA /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965FD8A24EE660F003559EA /* ViewModelType.swift */; };
+		F86A4CC1B4D159F78AC07427 /* Pods_GithubSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE64AEDB9A3CFDCBEF0F2A /* Pods_GithubSearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		537E63A3B5523118E7BF2102 /* Pods-GithubSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch.release.xcconfig"; path = "Target Support Files/Pods-GithubSearch/Pods-GithubSearch.release.xcconfig"; sourceTree = "<group>"; };
+		6BB0AE415D4C46DE484F8386 /* Pods-GithubSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch.debug.xcconfig"; path = "Target Support Files/Pods-GithubSearch/Pods-GithubSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		74FE64AEDB9A3CFDCBEF0F2A /* Pods_GithubSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8940108124EE3940005C94BA /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8940108424EE3940005C94BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8940108624EE3940005C94BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		8940108D24EE3942005C94BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8940109024EE3942005C94BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8940109224EE3942005C94BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8940109924EE39A3005C94BA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8940109B24EE3AFC005C94BA /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		8940109E24EE421C005C94BA /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8965FD8A24EE660F003559EA /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86A4CC1B4D159F78AC07427 /* Pods_GithubSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1034C3DC8D8EB461EBFE0A78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BB0AE415D4C46DE484F8386 /* Pods-GithubSearch.debug.xcconfig */,
+				537E63A3B5523118E7BF2102 /* Pods-GithubSearch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1CA6859C137BEE12C1D632ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74FE64AEDB9A3CFDCBEF0F2A /* Pods_GithubSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8940107824EE3940005C94BA = {
 			isa = PBXGroup;
 			children = (
 				8940108324EE3940005C94BA /* GithubSearch */,
+				8940109824EE3965005C94BA /* Supporting Files */,
 				8940108224EE3940005C94BA /* Products */,
+				1034C3DC8D8EB461EBFE0A78 /* Pods */,
+				1CA6859C137BEE12C1D632ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,42 @@
 		8940108324EE3940005C94BA /* GithubSearch */ = {
 			isa = PBXGroup;
 			children = (
-				8940108424EE3940005C94BA /* AppDelegate.swift */,
-				8940108624EE3940005C94BA /* SceneDelegate.swift */,
+				8965FD8C24EE6618003559EA /* Protocol */,
+				8940109D24EE41F9005C94BA /* Networking */,
+				8940109924EE39A3005C94BA /* ViewModel.swift */,
 				8940108824EE3940005C94BA /* ViewController.swift */,
 				8940108A24EE3940005C94BA /* Main.storyboard */,
-				8940108D24EE3942005C94BA /* Assets.xcassets */,
-				8940108F24EE3942005C94BA /* LaunchScreen.storyboard */,
 				8940109224EE3942005C94BA /* Info.plist */,
+				8940109B24EE3AFC005C94BA /* Repository.swift */,
 			);
 			path = GithubSearch;
+			sourceTree = "<group>";
+		};
+		8940109824EE3965005C94BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8940108424EE3940005C94BA /* AppDelegate.swift */,
+				8940108624EE3940005C94BA /* SceneDelegate.swift */,
+				8940108D24EE3942005C94BA /* Assets.xcassets */,
+				8940108F24EE3942005C94BA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8940109D24EE41F9005C94BA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8940109E24EE421C005C94BA /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8965FD8C24EE6618003559EA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8965FD8A24EE660F003559EA /* ViewModelType.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8940109524EE3942005C94BA /* Build configuration list for PBXNativeTarget "GithubSearch" */;
 			buildPhases = (
+				0AE11DD83955576EEEDD60FE /* [CP] Check Pods Manifest.lock */,
 				8940107D24EE3940005C94BA /* Sources */,
 				8940107E24EE3940005C94BA /* Frameworks */,
 				8940107F24EE3940005C94BA /* Resources */,
+				A8E1D4339EEE53CE3EFA1600 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +195,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AE11DD83955576EEEDD60FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8E1D4339EEE53CE3EFA1600 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubSearch/Pods-GithubSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubSearch/Pods-GithubSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubSearch/Pods-GithubSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8940107D24EE3940005C94BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8940109F24EE421C005C94BA /* APIManager.swift in Sources */,
 				8940108924EE3940005C94BA /* ViewController.swift in Sources */,
 				8940108524EE3940005C94BA /* AppDelegate.swift in Sources */,
+				8940109C24EE3AFC005C94BA /* Repository.swift in Sources */,
+				8940109A24EE39A3005C94BA /* ViewModel.swift in Sources */,
 				8940108724EE3940005C94BA /* SceneDelegate.swift in Sources */,
+				8965FD8B24EE660F003559EA /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +390,7 @@
 		};
 		8940109624EE3942005C94BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB0AE415D4C46DE484F8386 /* Pods-GithubSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +409,7 @@
 		};
 		8940109724EE3942005C94BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537E63A3B5523118E7BF2102 /* Pods-GithubSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
