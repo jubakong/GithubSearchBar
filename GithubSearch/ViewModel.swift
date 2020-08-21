@@ -18,7 +18,6 @@ class ViewModel: ViewModelType {
   
   struct Input {
     let searchBar: Driver<String>
-    
   }
   
   struct Output {
@@ -32,7 +31,7 @@ class ViewModel: ViewModelType {
     
     input.searchBar.drive(onNext: { [weak self] in
       guard let `self` = self else { return }
-      
+
       self.router.repositoriesBy($0)
         .subscribe(onNext: { self.searchBarLinker.onNext($0) })
         .disposed(by: self.disposeBag)

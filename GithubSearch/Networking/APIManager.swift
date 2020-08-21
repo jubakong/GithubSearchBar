@@ -18,9 +18,8 @@ class APIManager {
         return Observable.just([])
     }
     return URLSession.shared.rx.json(url: url)
-    .retry(3)
-//    .catchErrorJustReturn([])
-    .map(parse)
+      .retry(3)
+      .map(parse)
   }
   
   func parse(json: Any) -> [Repository] {

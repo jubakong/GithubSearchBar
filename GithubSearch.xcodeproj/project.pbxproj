@@ -91,11 +91,11 @@
 			children = (
 				8965FD8C24EE6618003559EA /* Protocol */,
 				8940109D24EE41F9005C94BA /* Networking */,
+				89FAB7AE24EF64D30016C629 /* Model */,
 				8940109924EE39A3005C94BA /* ViewModel.swift */,
 				8940108824EE3940005C94BA /* ViewController.swift */,
 				8940108A24EE3940005C94BA /* Main.storyboard */,
 				8940109224EE3942005C94BA /* Info.plist */,
-				8940109B24EE3AFC005C94BA /* Repository.swift */,
 			);
 			path = GithubSearch;
 			sourceTree = "<group>";
@@ -125,6 +125,14 @@
 				8965FD8A24EE660F003559EA /* ViewModelType.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		89FAB7AE24EF64D30016C629 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8940109B24EE3AFC005C94BA /* Repository.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
