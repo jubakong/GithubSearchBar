@@ -4,5 +4,5 @@
 
 ### Rxswift를 MVVM에 기반한 clean architecture로 구현하였습니다.
 
-<img width="580 alt="![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/52398126/90978193-dd55fd80-e586-11ea-97f3-8090da2d18b1.gif)>
+![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/52398126/90978358-4be78b00-e588-11ea-89d4-a0871e061c89.gif)
 
